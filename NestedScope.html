@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nestedScope">
+<head>
+    <title>Nested Scope</title>
+    <script src="../../angular-1.5.8/angular.js"></script>
+    <script src="NestedScopeController.js"></script>
+</head>
+<body>
+<div ng-controller="NestedScopeController">
+    <b>Hello {{person}}!</b>
+    <br>
+    <br>
+    <ul>
+        <li ng-repeat="randomPerson in randomPeople">
+            {{randomPerson}} is a friend of {{person}}
+        </li>
+    </ul>
+</div>
+</body>
+</html>
